@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Giphy Party!</title>
+</head>
+
+<style>
+  body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .85);
+    color: white;
+  }
+  h1{
+    font-size: 50px;
+  }
+  #gif-size{
+    width: 20vw;
+    height: 20vh;
+    margin: 2vw;
+  }
+  button{
+    cursor: pointer;
+  }
+  #delete{
+    background-color: orangered;
+  }
+  ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+</style>
+
+<body>
+
+<h1>GIPHY PARTY</h1>
+<form action="">
+<input type="text" id="userinput">
+<button type="submit" id="search"> Search Giphy!</button>
+<button id="delete"> Remove Images</button>
+</form>
+
+<ul id="gifs">
+
+</ul>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.js"></script>
+<script src="app.js"></script>
+</body>
+
+</html>
